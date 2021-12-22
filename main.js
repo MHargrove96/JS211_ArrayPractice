@@ -1,0 +1,36 @@
+let cars = ['ford', 'nissan', 'chevrolet', 'datsun']
+console.log(cars)
+console.log(cars.length)
+let moreCars = ['dodge', 'crystler', 'pontiac', 'honda']
+let totalCars = cars.concat(moreCars)
+console.log(totalCars)
+console.log(totalCars.indexOf('honda'))
+console.log(totalCars.lastIndexOf('ford'))
+let stringOfCars = totalCars.join(',')
+console.log(stringOfCars)
+let carsFromString = stringOfCars.split(',')
+console.log(carsFromString)
+let carsInReverse = totalCars.reverse()
+console.log(carsInReverse)
+console.log(carsInReverse.sort())
+// ------------------------------------------------------------------------------------------------------------------------------------------------------
+const pets = ['dog', 'cat', 'fish', 'rabbit', 'snake', 'lizard', 'bird']
+let reptiles = pets.slice(4, -1)
+console.log(pets)
+console.log(reptiles)
+let removedReptiles = pets.splice(4, 2, 'hamster')
+console.log(pets)
+console.log(removedReptiles)
+let removedPets = pets.pop()
+console.log(pets)
+console.log(removedPets)
+pets.push(removedPets)
+console.log(pets)
+pets.shift()
+console.log(pets)
+pets.unshift('turtle')
+console.log(pets)
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+const numbers = [23, 45, 0, 2, 8, 44, 100, 1, 3, 91, 34]
+numbers.forEach((num, index) => numbers[index] = num + 2)
+console.log(numbers)
